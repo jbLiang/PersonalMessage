@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <ImageView
+        android:id="@+id/messageImgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher"
+        />
+    <RelativeLayout 
+        android:id="@+id/contentlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/messageImgId">
+        <TextView 
+            android:id="@+id/titleTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="OPEN运营团队"/>
+        <TextView 
+            android:id="@+id/timeTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/titleTvId"
+             android:textSize="20dp"
+             android:text="20秒前"/>
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/timeTvId"
+            android:text="删除"
+            android:visibility="invisible"/>
+        <TextView 
+            android:id="@+id/contentTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTvId"
+            android:textSize="20dp"
+            android:text="OPEN运营团队测试成功，欢迎光临"/>
+    </RelativeLayout>
+</RelativeLayout>

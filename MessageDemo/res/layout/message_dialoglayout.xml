@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <RelativeLayout 
+        android:id="@+id/messagelayout"
+        android:layout_width="610dp"
+        android:layout_height="630dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF">
+        <Button 
+        android:id="@+id/editbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="25dp"
+        android:text="编辑"/>
+        <TextView 
+        android:id="@+id/titletv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/editbutton"
+        android:textSize="30dp"
+        android:text="消息列表"/>
+         <Button 
+        android:id="@+id/closebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/titletv"
+        android:text="关闭"/>
+         
+         <ListView 
+        android:id="@+id/messagelistviewId"
+        android:layout_width="610dp"
+        android:layout_height="580dp"
+        android:layout_below="@id/editbutton">
+        </ListView>
+        
+         <RelativeLayout 
+             android:id="@+id/messagecontentlayout"
+             android:layout_width="610dp"
+      		 android:layout_height="580dp"
+             android:layout_below="@id/editbutton"
+             android:visibility="invisible">
+             <ImageView 
+                 android:id="@+id/imageId"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/ic_launcher"
+                 />
+             <TextView 
+                 android:id="@+id/titleTvId"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/imageId"
+                 android:textSize="40dp"
+                 android:text="OPEN运营团队"/>
+             <TextView 
+                 android:id="@+id/timeId"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/titleTvId"
+                 android:textSize="20dp"
+                 android:text="20秒前"/>
+             <TextView 
+                 android:id="@+id/messageTvId"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/imageId"
+                 android:textSize="20dp"
+                 android:text="OPEN运营团队，欢迎光临  OPEN运营团队，欢迎光临   OPEN运营团队，欢迎光临"/>
+         </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
